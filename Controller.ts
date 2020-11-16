@@ -1,6 +1,8 @@
 const request = require('request-promise');
 const promiseRetry = require('promise-retry');
 
+
+class CONTROLLER {
   // data: { value: 'old1' }
   const REMOTE_RESOURCE_1_URL = 'http://example.com/api/resource1'
   // data: { value: 'old2' }
@@ -58,3 +60,5 @@ const promiseRetry = require('promise-retry');
 
 updateRemoteApi()
 .catch(error => console.log('error: ', error));
+
+}
